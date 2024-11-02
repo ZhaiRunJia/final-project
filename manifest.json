@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "SEO Suggestion Extension",
+    "version": "1.0",
+    "description": "AI SEO tool to help with suggestions on how to get better SEO by improving the HTML",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    }
+}
