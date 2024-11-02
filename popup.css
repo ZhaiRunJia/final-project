@@ -1,0 +1,93 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    width: 300px;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #0073e6;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+/* Loader animation */
+.loader {
+    display: none;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #0073e6;
+    border-radius: 50%;
+    display: inline-block;
+    animation: bounce 0.6s infinite alternate;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    to {
+        opacity: 0.3;
+        transform: translateY(-10px);
+    }
+}
+
+/* Results styling */
+.results {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.results h2 {
+    font-size: 1.2rem;
+    color: #0073e6;
+}
+
+#suggestions-text {
+    font-size: 0.9rem;
+    color: #333;
+}
